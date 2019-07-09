@@ -6,6 +6,8 @@ const forms = (props) =>{
         display:'block',
         alignItems:'center',
         // textAlign: 'center'
+       
+        
     }
     const inputStyle={
         length:"4px",
@@ -16,11 +18,12 @@ const forms = (props) =>{
         <div>
             
             <label htmlFor = "name" style={labelStyle}>
-               {props.fieldName} <input 
+               {props.fieldName} 
+               <input 
                 type={props.type} 
                 placeholder={props.placeholder} 
                 onChange={props.onchange}
-                />
+                size='100'/>
             </label>
             {/* <label htmlfor ='name' style={labelStyle}>
                 <input type = 'submit' />

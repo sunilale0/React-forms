@@ -34,7 +34,8 @@ class App extends Component{
   render(){
 
     const container={
-      textAlign: 'center'
+    
+      textAlign: 'center',
     }
     const formStyle={
       border:'1px solid green',
