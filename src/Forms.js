@@ -1,29 +1,32 @@
 import React from 'react';
-import { blockStatement } from '@babel/types';
 
 const forms = (props) =>{
 
     const labelStyle={
         display:'block',
-        float:'left'
+    }
+    const inputStyle={
+        length:"4px",
+        size:"4px",
+        padding:'10px'
     }
     return(
         <div>
-            <form onSubmit={props.submit}>
+            
             <label htmlFor = "name" style={labelStyle}>
-               UserName: <input 
-                type="text" 
-                placeholder="Input your Name" 
+               {props.fieldName} <input 
+                type={props.type} 
+                placeholder={props.placeholder} 
                 onChange={props.onchange}
-                value={props.userValue}/>
+                />
             </label>
-            <label htmlfor ='name' style={labelStyle}>
+            {/* <label htmlfor ='name' style={labelStyle}>
                 <input type = 'submit' />
             </label>
             <label>
-                <input type='text'/>
-            </label>
-            </form>
+                <input type={props.type} placeholder/>
+            </label> */}
+           
             
         </div>
     )
