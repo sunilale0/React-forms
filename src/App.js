@@ -33,6 +33,9 @@ class App extends Component{
   
   render(){
 
+    const container={
+      textAlign: 'center'
+    }
     const formStyle={
       border:'1px solid green',
       margin:'10px 5px',
@@ -40,42 +43,39 @@ class App extends Component{
     }
     return(
       <div>
-        <div>Name: {this.state.userName}</div>
+        <div style={container}>Name: {this.state.userName}</div>
         <form onSubmit={this.handleSubmit} style={formStyle}> 
         <Forms 
         onchange={this.handleChange} 
         userValue={this.state.userName}
         type='text'
         placeholder='johndoe1'
-        fieldName='Username:'/> 
+        fieldName='User name:'/> 
         <br/>
         <Forms 
-        onchange={this.handleChange} 
         userValue={this.state.userName}
         type='text'
         placeholder='John'
         fieldName='First Name:'/>
         <br/>
         <Forms 
-        onchange={this.handleChange} 
         userValue={this.state.userName}
         type='text'
         placeholder='Doe'
         fieldName='Last Name:'/>
         <br/>
         <Forms 
-        onchange={this.handleChange} 
         userValue={this.state.userName}
-        type='text'
+        type='textarea'
         placeholder='123 Jay Lane, Some City, Country'
-        fieldName='Address:'/> 
+        fieldName='Add ress:'/> 
         <br/>
         <Forms 
-        onchange={this.handleChange} 
         userValue={this.state.userName}
         type='submit'
         /> 
         </form>
+        
          
       </div>
       

@@ -4,6 +4,8 @@ const forms = (props) =>{
 
     const labelStyle={
         display:'block',
+        alignItems:'center',
+        // textAlign: 'center'
     }
     const inputStyle={
         length:"4px",
